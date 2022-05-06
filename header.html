@@ -428,7 +428,8 @@
             if (obj != undefined) {
                 if (obj.email == Email && obj.password == Password) {
                     alert("you log in...");
-                    window.location.assign("p1.html");
+//                     window.location.assign("p1.html");
+                    window.location.assign("index.html");
                 } else if (obj.email == Email && obj.password != Password) {
                     document.getElementById("forpword").innerHTML = "Password is incorrect";
                     document.getElementById("forMail").innerHTML = "";
@@ -548,7 +549,8 @@
             login.password = Password;
             login.conpassword = ConPassword;
             document.cookie = "login=" + JSON.stringify(login) + ";";
-            window.location.assign("home.html");
+//             window.location.assign("home.html");
+               window.location.assign("index.html");
         }
     }
 </script>
